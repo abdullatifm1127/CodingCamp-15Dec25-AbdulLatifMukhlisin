@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Mobil</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Daftar Mobil</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID_Mobil</th>
+            <th>Merek</th>
+            <th>Model</th>
+            <th>Tahun</th>
+            <th>Harga</th>
+            <th>Stok</th>
+            <th>Check</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Toyota</td>
+            <td>Avanza</td>
+            <td>2022</td>
+            <td>300 juta</td>
+            <td>5</td>
+            <td><input type="checkbox" class="centang" value="1"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Honda</td>
+            <td>Brio</td>
+            <td>2023</td>
+            <td>250 juta</td>
+            <td>3</td>
+            <td><input type="checkbox" class="centang" value="2"></td>
+        </tr>
+    </tbody>
+</table>
+
+<button id="btn-del">Delete</button>
+
+<br><br><br>
+
+<h2>Input Mobil</h2>
+<form id="FM" action="#">
+    <label>ID Mobil</label><br>
+    <input type="number" min="1"><br><br>
+
+    <label>Merek Mobil</label><br>
+    <input type="text"><br><br>
+
+    <label>Model Mobil</label><br>
+    <input type="text"><br><br>
+
+    <label>Tahun Mobil</label><br>
+    <input type="number" min="2010" max="2024"><br><br>
+
+    <label>Harga (juta)</label><br>
+    <input type="number" min="13"><br><br>
+
+    <label>Stok</label><br>
+    <input type="number" min="0"><br><br>
