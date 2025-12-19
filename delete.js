@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#btn-del").click(function(e){
-      var idss = []; // nama variable harus beda dengan key saat post
-      $('.centang:checked').each(function(){ //melooping cek box yang memiliki class centang yang di check(Dicentang)
+      var idss = [];
+      $('.centang:checked').each(function(){
         idss.push($(this).val())
       })
       if(idss.length > 0){

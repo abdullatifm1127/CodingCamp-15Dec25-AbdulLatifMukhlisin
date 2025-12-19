@@ -6,7 +6,7 @@ $(document).ready(function(){
     var kondisi = true;
     var formData = $(this).serialize();
     $('.centang').each(function(){
-        if( $(this).val() == $("#id-mobil").val()){ //mengecek nilai id mobil apakah ada yang sama dari data yang di inputkan 
+        if( $(this).val() == $("#id-mobil").val()){ 
             kondisi = false;
         }
     })
